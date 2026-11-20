@@ -1,0 +1,14 @@
+$kind: http-request
+description: ""
+url: http://127.0.0.1:5000/api/actors
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Райан Гослінг\",\r
+
+    \  \"birthday\": \"1980-11-12\"\r
+
+    }"
+order: 3000

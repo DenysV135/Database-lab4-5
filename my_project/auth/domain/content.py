@@ -3,7 +3,7 @@ from my_project.auth.domain.content_actors import ContentActors
 
 class Content(db.Model):
     __tablename__ = 'content'
-    
+
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     description = db.Column(db.Text, nullable=False)
     release_year = db.Column(db.Integer, nullable=False)
@@ -19,7 +19,15 @@ class Content(db.Model):
             "title": item.title,
             "description": item.description,
             "release_year": item.release_year,
-            "age_ratings_id": item.age_ratings_id
+            "age_ratings_id": item.age_ratings_id,
+            "actors": [
+                {
+                    "actor_id": link.actors_id,
+                    "actor_name": link.actor.name if link.actor else None,
+                    "role_name": link.role_name
+                }
+                for link in item.actors
+            ]
         }
 
     @staticmethod

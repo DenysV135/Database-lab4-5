@@ -7,7 +7,6 @@ class AgeRating(db.Model):
     name = db.Column(db.String(45), nullable=False)
     description = db.Column(db.Text, nullable=False)
 
-    # Зв'язок 1:M до таблиці Content
     contents = db.relationship('Content', backref='age_rating', lazy='dynamic')
 
     @staticmethod

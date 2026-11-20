@@ -1,0 +1,6 @@
+$kind: http-request
+name: m:m
+description: ""
+url: http://127.0.0.1:5000/api/actors//content
+method: GET
+order: 7000

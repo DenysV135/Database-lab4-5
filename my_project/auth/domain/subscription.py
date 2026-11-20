@@ -16,7 +16,15 @@ class Subscription(db.Model):
         return {
             "id": item.id,
             "name": item.name,
-            "description": item.description
+            "description": item.description,
+            "users": [
+                {
+                    "id": u.id,
+                    "username": u.username,
+                    "email": u.email
+                }
+                for u in item.users
+            ]
         }
 
     @staticmethod

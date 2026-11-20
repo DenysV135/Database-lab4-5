@@ -15,7 +15,16 @@ class Actor(db.Model):
         return {
             "id": item.id,
             "name": item.name,
-            "birthday": str(item.birthday) if item.birthday else None
+            "birthday": str(item.birthday) if item.birthday else None,
+            "movies_and_roles": [
+                {
+                    "content_id": link.content_id,
+                    "title": link.content.title,
+                    "release_year": link.content.release_year,
+                    "role_name": link.role_name
+                }
+                for link in item.contents
+            ]
         }
 
     @staticmethod

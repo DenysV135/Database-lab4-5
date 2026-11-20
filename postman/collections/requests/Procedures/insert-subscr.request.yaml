@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://127.0.0.1:5000/api/procedures/insert-10-subscriptions
+method: POST
+body:
+  type: json
+  content: "{\r\n  \"start_num\": 5\r\n}"
+order: 3000

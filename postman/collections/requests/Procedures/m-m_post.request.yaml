@@ -1,0 +1,16 @@
+$kind: http-request
+name: m:m_post
+url: http://127.0.0.1:5000/api/procedures/link-actor-content
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"actor_name\": \"Том Круз\",\r
+
+    \  \"content_title\": \"Матриця\",\r
+
+    \  \"role_name\": \"Секретний агент\"\r
+
+    }"
+order: 2000

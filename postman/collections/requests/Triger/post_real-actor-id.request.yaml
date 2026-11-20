@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://127.0.0.1:5000/api/actor-awards
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"award_name\": \"Saturn Award\",\r
+
+    \  \"award_year\": 2023,\r
+
+    \  \"actor_id\": 1\r
+
+    }"
+order: 3000

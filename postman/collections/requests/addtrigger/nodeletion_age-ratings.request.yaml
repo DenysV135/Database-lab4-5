@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://127.0.0.1:5000/api/age-ratings/1
+method: DELETE
+order: 1000

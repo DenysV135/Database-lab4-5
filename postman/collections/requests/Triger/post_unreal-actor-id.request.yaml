@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://127.0.0.1:5000/api/actor-awards
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"award_name\": \"Golden Globe\",\r
+
+    \  \"award_year\": 2024,\r
+
+    \  \"actor_id\": 999\r
+
+    }"
+order: 2000

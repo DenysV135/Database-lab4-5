@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://127.0.0.1:5000/api/subscriptions
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Plan100\",\r
+
+    \  \"description\": \"Тест тригера\"\r
+
+    }"
+order: 3000

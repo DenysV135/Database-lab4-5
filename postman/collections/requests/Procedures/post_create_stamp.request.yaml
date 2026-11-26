@@ -3,15 +3,5 @@ url: http://127.0.0.1:5000/api/procedures/split-actors
 method: POST
 body:
   type: json
-  content: "[\r
-
-    \  {\r
-
-    \    \"created_table_1\": \"actors_copy1_20261120_165501\",\r
-
-    \    \"created_table_2\": \"actors_copy2_20261120_165501\"\r
-
-    \  }\r
-
-    ]"
+  content: ""
 order: 5000

@@ -1,8 +1,6 @@
 USE `mydb`;
 
--- =====================================================================
--- 1. ДОДАТКОВА ТАБЛИЦЯ (1:M ДО actors) + ТРИГЕРИ ЦІЛІСНОСТІ ЗАМІСТЬ FK
--- =====================================================================
+
 DROP TABLE IF EXISTS `mydb`.`actor_awards`;
 CREATE TABLE `mydb`.`actor_awards` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -12,7 +10,6 @@ CREATE TABLE `mydb`.`actor_awards` (
   PRIMARY KEY (`id`)
 ) ENGINE = InnoDB;
 
--- Тестові дані для нової таблиці (прив'язані до існуючих акторів 1, 2, 6)
 INSERT INTO `mydb`.`actor_awards` (`award_name`, `award_year`, `actor_id`) VALUES
 ('MTV Movie Award', 2000, 1),
 ('Oscar Best Supporting Actor', 2011, 2),

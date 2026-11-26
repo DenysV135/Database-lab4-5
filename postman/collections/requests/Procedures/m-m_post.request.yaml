@@ -6,11 +6,11 @@ body:
   type: json
   content: "{\r
 
-    \  \"actor_name\": \"Том Круз\",\r
+    \  \"actor_name\": \"Том Пергамент\",\r
 
     \  \"content_title\": \"Матриця\",\r
 
-    \  \"role_name\": \"Секретний агент\"\r
+    \  \"role_name\": \"комар\"\r
 
     }"
 order: 2000
